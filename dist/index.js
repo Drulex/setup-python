@@ -399,7 +399,7 @@ function _findMatch(versionSpec, stable, candidates, archFilter) {
                     core_1.debug(`${item.arch}===${archFilter} && ${item.platform}===${platFilter}`);
                     let chk = item.arch === archFilter && item.platform === platFilter;
                     if (chk && item.platform_version) {
-                        const osVersion = module.exports._getOsVersion();
+                        const osVersion = "18.04";
                         if (osVersion === item.platform_version) {
                             chk = true;
                         }
